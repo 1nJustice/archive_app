@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Архиватор</title>
+</head>
+<body>
+    <h1>Загрузить файлы для архивирования</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="files">Выберите файлы:</label>
+        <input type="file" id="files" name="files" multiple required><br><br>
+        <label for="format">Выберите формат архива:</label>
+        <select id="format" name="format">
+            <option value="zip">ZIP</option>
+            <option value="tar">TAR</option>
+        </select><br><br>
+        <input type="submit" value="Загрузить и архивировать">
+    </form>
+</body>
+</html>
